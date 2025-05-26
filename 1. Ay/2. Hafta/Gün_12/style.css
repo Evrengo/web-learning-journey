@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.box {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 8px;
+  height:100px;
+  border: 2px solid #000;
+}
+
+.px {
+  width: 200px;
+}
+
+.rem {
+  width: 12rem;
+}
+
+.em_parent {
+  font-size: 10px;
+}
+
+.em {
+  width: 10em;
+  background-color: lightcoral;
+}
+
+.vw {
+  width: 30vw;
+  background-color: lightgreen;
+}

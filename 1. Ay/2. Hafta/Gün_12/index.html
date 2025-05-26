@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Birim Testi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Responsive Birim Deneyleri</h1>
+
+  <div class="box px">Bu kutu <strong>200px</strong></div>
+  <div class="box rem">Bu kutu <strong>12rem</strong></div>
+  <div class="box em-parent">
+    <p class="box em">Bu kutu <strong>10em</strong></p>
+  </div>
+  <div class="box vw">Bu kutu <strong>30vw</strong></div>
+</body>
+</html>
+
+1. Tarayıcı pencereni daralt.
+px, rem, em kutuları neredeyse sabit kalır.
+vw olan kutu ise ekran küçüldükçe küçülür, büyüdükçe büyür → işte bu responsive tasarım davranışıdır.
+
+2. html { font-size: 10px; } gibi bir şey dene
+rem ile verilen kutular küçülür.
+em olan da küçülür ama sadece kendi parent’ının font size’ı etkiler.
+
+px	    ---   Sabit kalan öğeler için (örneğin ikon)
+em	    ---   Parent'a göre esnek boyutlandırma (buton padding gibi)
+rem	    ---   Genel ölçeklemeye duyarlı yapı kurmak için (typography, layout)
+vw/vh	---   Ekran boyutuna göre responsive alanlar yapmak için (hero section, fullscreen div)

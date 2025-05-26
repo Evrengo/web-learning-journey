@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    .soru {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .secenekler button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #sonraki {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="quiz-kutu">
+    <div id="soru" class="soru">Soru buraya gelecek</div>
+    <div class="secenekler">
+      <button class="secenek">Seçenek 1</button>
+      <button class="secenek">Seçenek 2</button>
+      <button class="secenek">Seçenek 3</button>
+      <button class="secenek">Seçenek 4</button>
+    </div>
+    <button id="sonraki">Sonraki</button>
+    <div id="sonuc" style="margin-top: 20px; font-weight: bold;"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
